@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./data/estatales.js"></script>
+    <script src="./data/comunidades.js"></script>
+    <script src="./data/provincias.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.css"/>
+    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+    <style>
+      #datos{
+        padding:13px;
+        max-height: 600px;
+        overflow: scroll;
+      }
+      .nombre{
+        max-width: 150px;
+      }
+      .votos{
+        max-width: 60px;
+      }
+      .sub-tab{
+        max-height: 400px;
+        overflow: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div id="chart" class="col-xs-12 col-md-4"><svg></svg></div>
+        <div id="datos" class="col-xs-12 col-md-8 table-responsive"></div>
+      </div>
+    </div>
+    <script src="./js/hondt.js"></script>
+    <script src="./js/charts.js"></script>
+    <script src="./js/draw.js"></script>
+  </body>
+</html>
