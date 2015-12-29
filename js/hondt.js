@@ -63,7 +63,8 @@ function isInConv(partido,con){
   return isIn;
 }
 
-function conver(datos){
+function conver(dat){
+  var datos = JSON.parse(JSON.stringify(dat));
   conv.forEach(function(con){
     con = con.map(function(a){return a;});
     datos.items = datos.items.filter(function(a){
@@ -75,7 +76,8 @@ function conver(datos){
   return datos;
 }
 
-function conver_comu(datos){
+function conver_comu(dat){
+  var datos = JSON.parse(JSON.stringify(dat));
   return datos.map(function(a,i){
     conv.forEach(function(con){
       con = con.map(function(a){return a;});
